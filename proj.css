@@ -1,0 +1,42 @@
+body{
+	font-size: 120%;
+	background-color: grey;
+ 	margin : 20px ;
+}
+
+h1{
+	text-align: center;
+	background-color: black;
+	color:white;
+	padding-bottom: 15px;
+}
+
+a{
+
+color:red;
+text-decoration: none;	
+display: inline-block;
+
+}
+
+h2{
+
+	font-size: 30px;
+	background-color: blue;
+	display: inline;
+
+}
+
+section{
+
+	width: 30%;
+	display: inline-block;
+	float: left;
+}
+
+footer{
+	float:right;
+	clear :both;
+}
+
+
