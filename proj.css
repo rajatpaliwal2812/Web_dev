@@ -19,6 +19,22 @@ text-decoration: none;
 display: inline-block;
 
 }
+
+a:visited{
+
+	color:maroon;	
+	font-style: italic;
+	border: solid 4px black  ;
+
+
+
+}
+a:hover {
+	transition: 1s ease;
+	color:red;	
+	font-style: bold;
+	border: solid 4px black  ;
+}
 header, footer{
 	background-color: #666666;
 	background: -moz-linear-gradient(top, #666666 0%, #00b7ea 100%);
@@ -35,6 +51,9 @@ h2{
 	display: inline-block;
 
 }
+
+
+
 
 section{
 
