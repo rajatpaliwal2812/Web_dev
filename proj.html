@@ -10,11 +10,16 @@
 	</title>
 	<link rel="icon" type="image/png" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc5TKcCu_JJcJydMmZ7ydH7Hp-xl_bQpNGsnH_kkPJ9bfqsmgO" alt=" " />
 	<link type="text/css" rel="stylesheet" href="css/proj.css" />
+	<script src="proj.js"></script>
+	
+
 </head>
 
 <body >
+
 <h1>
-<header   > Rajat Paliwal  <br/>
+<header   > Rajat Paliwal <span id="date"> <button onclick="Da()"> Today's Date </button> </span><br/>
+
 <nav>
 <a href="calender.html" > Calender &nbsp </a>  <a href="" > Second &nbsp  </a> <a href=" " > Third &nbsp  </a> <a href=" " > Fourth  &nbsp </a> <br/>
 </nav>
@@ -45,10 +50,46 @@
 </details>
 </section>
 
+<form>
+	<legend> <br/>Form<br>
+	<label  for="name" > Name </label>
+	<input type="text" id="name" name="name" ><br>
+	<label> Add Nickname : <input type="checkbox" name="nickname" id="nickname" onchange="Func()"> </label><br>
+	<input type="text" name="nick"  id="nick" style="display: none">
+</label>
+
+	<label>  Email : <input type="email" name="email"> </label><br/>
+	<label> Birth : <input type="date" name="birth">  </label><br/>
+	<label> Url : <input type="url" name="url" placeholder="www.a.com"  id='u'  >   </label><br/>
+	<label for="pass"> Password :</label>
+	<input type="password" name="pass" id="pass" required ><br> 
+	<label> Radio : <br><input type="radio" name="gender" value="Male" checked="Male">Male <br> <input type="radio" name="gender" value="Female">Female<br>
+		<input type="radio" name="gender" value="Other"> Other <br>
+	</label>
+	<label> Range : <input type="range" name="range"   id='r' min="10" max="50" >   </label><br/>
+	<label> Zipcode : <input type="number" name="zp"   id='zp' min="0" max="1000000" >   </label><br/>
+	<input type="submit" value="Click Here" >
+
+	</legend>
+</form><br>
+
+<form>
+<label> Enter Email : <input type="email" name="email0" id="email0" required placeholder="me@me.com" >  </label>	<br>
+<label>Confirm Email : <input type="email" name="email1" id="email1" required placeholder="me@me.com" onchange="check()">  </label><br>
+<input type="submit" value="Submlit" onclick="return check()">
+
+</form>
+
+	
+
+
 <footer>
 	<button type="button"> <img src="https://assetscdn1.paytm.com/images/catalog/view_item/180135/1515866987151.jpg?imwidth=320&impolicy=hq" alt ="my pic"/> </button><br/>
- 	This Page was Created By Rajat Paliwal. 
-</footer>
+ 	This Page was Created By Rajat Paliwal. <br>
+ 	<button id="one" onclick="M1()"> First</button> <br/> <button id="two" onclick="M2()"> Second</button><br>
+ 	<button onclick="Open1()" > Show </button><br> <button id="change" onclick="Remove1()"> Remove </button><br>
+ 	<p id="o"> I am going to appear and disappear </p>
+ </footer>
 
 
 
